@@ -351,9 +351,10 @@ header nav{
 nav.mobile{
     display: none;
 }
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
     header nav{
         display: none;
+        font-size: 22px;
     }
     nav.mobile{
         display: block;
@@ -361,8 +362,12 @@ nav.mobile{
     nav.mobile ul li ul{
         display: none;
     }
-    nav.mobile ul li:hover ul{
+    nav.mobile ul li:hover ul.sub{
         display: block;
     }
-    
+    nav.mobile ul.sub li{
+        width: 100%;
+        position: relative;
+        z-index: 999;
+    } 
 }
