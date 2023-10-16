@@ -351,3 +351,18 @@ header nav{
 nav.mobile{
     display: none;
 }
+@media screen and(max-width: 480px) {
+    header nav{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+    }
+    nav.mobile ul li ul{
+        display: none;
+    }
+    nav.mobile ul li:hover ul{
+        display: block;
+    }
+    
+}
